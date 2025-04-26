@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Meu Amor!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .image-gallery {
+            display: flex;
+            overflow-x: scroll;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        .image-gallery img {
+            margin-right: 10px;
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .counter {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>25 - 04 - 2025</h1>
+    
+    <p>Feliz aniversário, meu amor!</p>
+    <p>Quero te dizer o quanto eu te amo, o quanto estou feliz pela sua vida e o quanto desejo que você seja feliz.</p>
+    <p>Independente de qualquer circunstância, você pode contar comigo sempre, independente dos nossos destinos e escolhas.</p>
+    <p>O nosso amor, para mim, é uma conexão, é surreal, é família, é parabatai, é laço de sangue e de alma, é escolha, é decisão, é sorte.</p>
+    <p>Além do seu aniversário, também comemoramos 5 anos e 6 meses desde o dia em que a gente se conheceu.</p>
+    <p>Eu estou muito orgulhosa de você, de nós dois, de tudo que a gente aprendeu juntos.</p>
+    <p>Independente de qualquer coisa, eu sempre vou amar você, sempre vou amar tudo o que você significou e significa na minha vida.</p>
+    <p>Sempre vou ser grata por tudo que a gente aprendeu juntos, por tudo que a gente foi construindo aos trancos e barrancos, aprendendo com a vida e um com o outro.</p>
+    <p>Eu amo, amo demais isso que a gente tem: esse amor que, apesar dos nossos defeitos e limitações, é maior do que tudo.</p>
+    <p>Um amor capaz de superar qualquer coisa.</p>
+    <p>Fiz essa pequena homenagem para que você sinta o meu amor, para que você saiba que é importante para mim.</p>
+    <p>Te desejo sorte na vida.</p>
+    <p>E espero que você sempre lembre de mim, lembre do que eu fui para você e, principalmente, do que você foi, e sempre vai ser, para mim.</p>
+    <p>Me emociono só de pensar nisso, em como tivemos sorte desde que nos encontramos, todos esses anos.</p>
+    <p>E é isso que eu te desejo: sorte.</p>
+    <p>Feliz vida, feliz aniversário. Eu te amo, meu amor. ❤️</p>
+
+    <div class="image-gallery">
+        <img src="https://via.placeholder.com/200x150" alt="Imagem 1">
+        <img src="https://via.placeholder.com/200x150" alt="Imagem 2">
+        <img src="https://via.placeholder.com/200x150" alt="Imagem 3">
+        <img src="https://via.placeholder.com/200x150" alt="Imagem 4">
+        <!-- Você pode adicionar mais imagens aqui -->
+    </div>
+
+    <div class="counter">
+        <p>Tempo desde o nosso encontro:</p>
+        <p id="counter">Carregando...</p>
+    </div>
+
+    <script>
+        var startDate = new Date("2019-10-26");
+        var counterElement = document.getElementById('counter');
+
+        function updateCounter() {
+            var now = new Date();
+            var timeDifference = now - startDate;
+            var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            counterElement.textContent = days + " dias";
+        }
+
+        setInterval(updateCounter, 1000);
+        updateCounter();
+    </script>
+
+    <script>
+        var music = document.createElement("audio");
+        music.src = "https://www.youtube.com/watch?v=10bntxy4848";
+        music.autoplay = true;
+        music.loop = true;
+        document.body.appendChild(music);
+    </script>
+
+</body>
+</html>
