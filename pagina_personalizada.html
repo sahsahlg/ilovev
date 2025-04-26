@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Especial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 24px;
+            font-style: italic;
+        }
+        .foto {
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .contador {
+            font-size: 28px;
+            margin: 30px 0;
+        }
+        iframe {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz Aniversário, Meu Amor!</h1>
+        <h2>25 de Abril de 2025 - 5 anos e 6 meses juntos!</h2>
+    </header>
+    
+    <p>Minha vida é mais linda com você ao meu lado. Que felicidade poder comemorar sua vida e nosso amor!</p>
+    
+    <!-- Fotos -->
+    <img src="URL_DA_SUA_FOTO_1" alt="Foto 1" class="foto">
+    <img src="URL_DA_SUA_FOTO_2" alt="Foto 2" class="foto">
+    
+    <div class="contador">
+        <p>Tempo juntos: <span id="contador"></span></p>
+    </div>
+
+    <!-- Música -->
+    <iframe src="https://www.youtube.com/embed/10bntxy4848?autoplay=1&loop=1&playlist=10bntxy4848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+    <script>
+        // Função para calcular o tempo desde a data de quando se conheceram
+        function atualizarContador() {
+            var dataInicio = new Date('2019-10-26T00:00:00');
+            var dataAtual = new Date();
+            var diferenca = dataAtual - dataInicio;
+
+            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            var anos = Math.floor(dias / 365);
+            var meses = Math.floor((dias % 365) / 30);
+
+            document.getElementById("contador").innerHTML = anos + " anos e " + meses + " meses";
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador(); // Executa uma vez ao carregar a página
+    </script>
+</body>
+</html>
